@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryGame", "MemoryGame\MemoryGame.csproj", "{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryGame", "MemoryGame\MemoryGame.csproj", "{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Debug|iPhone = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Release|iPhone.ActiveCfg = Release|iPhone
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Release|iPhone.Build.0 = Release|iPhone
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{9DF9D06A-DE20-43FF-8096-8EFE60BC5BE3}.Debug|iPhone.Build.0 = Debug|iPhone
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Release|iPhone.ActiveCfg = Release|iPhone
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Release|iPhone.Build.0 = Release|iPhone
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{79644475-4EF6-4EC2-A6D8-5F673BFF09BE}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal
