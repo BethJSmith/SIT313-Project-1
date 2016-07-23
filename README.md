@@ -1,5 +1,9 @@
 # SIT313 Project 1 - Memory Game
 
+## Project description
+
+This project is for SIT313 Mobile Applications. I will be developing an app for a mobile system. The system I have chosen to develop for will be iOS.
+
 ## App description
 
 A simple memory game app designed for iOS devices.
