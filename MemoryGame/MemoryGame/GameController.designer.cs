@@ -16,6 +16,54 @@ namespace MemoryGame
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn01 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn02 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn03 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn04 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn05 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn06 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn07 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn08 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn09 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn10 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn11 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn12 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView img01 { get; set; }
 
         [Outlet]
@@ -62,8 +110,72 @@ namespace MemoryGame
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView img12 { get; set; }
 
+        [Action ("click01:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void touchIcon (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
+            if (btn01 != null) {
+                btn01.Dispose ();
+                btn01 = null;
+            }
+
+            if (btn02 != null) {
+                btn02.Dispose ();
+                btn02 = null;
+            }
+
+            if (btn03 != null) {
+                btn03.Dispose ();
+                btn03 = null;
+            }
+
+            if (btn04 != null) {
+                btn04.Dispose ();
+                btn04 = null;
+            }
+
+            if (btn05 != null) {
+                btn05.Dispose ();
+                btn05 = null;
+            }
+
+            if (btn06 != null) {
+                btn06.Dispose ();
+                btn06 = null;
+            }
+
+            if (btn07 != null) {
+                btn07.Dispose ();
+                btn07 = null;
+            }
+
+            if (btn08 != null) {
+                btn08.Dispose ();
+                btn08 = null;
+            }
+
+            if (btn09 != null) {
+                btn09.Dispose ();
+                btn09 = null;
+            }
+
+            if (btn10 != null) {
+                btn10.Dispose ();
+                btn10 = null;
+            }
+
+            if (btn11 != null) {
+                btn11.Dispose ();
+                btn11 = null;
+            }
+
+            if (btn12 != null) {
+                btn12.Dispose ();
+                btn12 = null;
+            }
+
             if (img01 != null) {
                 img01.Dispose ();
                 img01 = null;

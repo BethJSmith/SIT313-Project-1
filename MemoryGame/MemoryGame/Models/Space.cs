@@ -4,26 +4,26 @@ namespace MemoryGame
 	public class Space
 	{
 		// Value the space holds
-		public string icon;
+		public string Icon;
 
 		// Value of tile when hidden
-		public string hidden;
+		public string Blank;
 
 		// Whether or not the space has already been revealed
-		public bool revealed;
+		public bool Revealed;
 
 		public Space()
 		{
-			icon = "";
-			hidden = "";
-			revealed = false;
+			Icon = "";
+			Blank = "";
+			Revealed = false;
 		}
 
 		public Space(string value, string blank, bool show)
 		{
-			icon = value;
-			hidden = blank;
-			revealed = show;
+			Icon = value;
+			Blank = blank;
+			Revealed = show;
 		}
 
 	}

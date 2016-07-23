@@ -6,7 +6,7 @@ namespace MemoryGame
 	public class Game
 	{
 		Random rand = new Random();
-		public Space[] grid;
+		public Space[] Grid;
 		const string BLANK = "blank.png";
 
 		// Create a list to represent all available icons
@@ -22,7 +22,7 @@ namespace MemoryGame
 
 		public Game()
 		{
-			grid = new Space[12];
+			Grid = new Space[12];
 			AllocateIcons();
 		}
 
@@ -35,7 +35,7 @@ namespace MemoryGame
 			for (int i = 0; i < y; i++)
 			{
 				int x = rand.Next(icons.Count);
-				grid[i] = new Space(icons[x], BLANK, false); // Check -1
+				Grid[i] = new Space(icons[x], BLANK, false); // Check -1
 				icons.Remove(icons[x]);
 			}
 		}
