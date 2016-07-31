@@ -26,3 +26,10 @@
 /Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/05.png
 /Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/06.png
 /Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/blank.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/01.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/02.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/03.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/04.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/05.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/06.png
+/Users/bethany/Projects/MemoryGame/MemoryGame/obj/iPhoneSimulator/Debug/optimized/Tiles/blank.png

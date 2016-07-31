@@ -16,6 +16,10 @@ namespace MemoryGame
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btn00 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btn01 { get; set; }
 
         [Outlet]
@@ -60,7 +64,7 @@ namespace MemoryGame
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton btn12 { get; set; }
+        UIKit.UIButton btnScreen { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -110,12 +114,21 @@ namespace MemoryGame
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView img12 { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblWin { get; set; }
+
         [Action ("click01:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void touchIcon (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
+            if (btn00 != null) {
+                btn00.Dispose ();
+                btn00 = null;
+            }
+
             if (btn01 != null) {
                 btn01.Dispose ();
                 btn01 = null;
@@ -171,9 +184,9 @@ namespace MemoryGame
                 btn11 = null;
             }
 
-            if (btn12 != null) {
-                btn12.Dispose ();
-                btn12 = null;
+            if (btnScreen != null) {
+                btnScreen.Dispose ();
+                btnScreen = null;
             }
 
             if (img01 != null) {
@@ -234,6 +247,11 @@ namespace MemoryGame
             if (img12 != null) {
                 img12.Dispose ();
                 img12 = null;
+            }
+
+            if (lblWin != null) {
+                lblWin.Dispose ();
+                lblWin = null;
             }
         }
     }

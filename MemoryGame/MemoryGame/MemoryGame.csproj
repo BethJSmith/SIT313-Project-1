@@ -98,6 +98,8 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Models\" />
+    <Folder Include="Resources\Tiles\" />
+    <Folder Include="Resources\Sounds\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -126,13 +128,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\01.png" />
-    <BundleResource Include="Resources\02.png" />
-    <BundleResource Include="Resources\03.png" />
-    <BundleResource Include="Resources\04.png" />
-    <BundleResource Include="Resources\05.png" />
-    <BundleResource Include="Resources\06.png" />
-    <BundleResource Include="Resources\blank.png" />
+    <BundleResource Include="Resources\Tiles\01.png" />
+    <BundleResource Include="Resources\Tiles\02.png" />
+    <BundleResource Include="Resources\Tiles\03.png" />
+    <BundleResource Include="Resources\Tiles\04.png" />
+    <BundleResource Include="Resources\Tiles\05.png" />
+    <BundleResource Include="Resources\Tiles\06.png" />
+    <BundleResource Include="Resources\Tiles\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Sounds\success.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
