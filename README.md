@@ -16,6 +16,11 @@ Each attempt will be timed and a leaderboard will show the fastest times.
 
 - Touch screen
 - Navigation controller
-- Saving/loading data
 - iOS UI components
+- System Sound
+
+## iOS capabilities to be implemented
+
+- Saving/loading data
 - Table view
+- Timer
