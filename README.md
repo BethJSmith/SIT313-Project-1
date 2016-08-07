@@ -1,4 +1,4 @@
-# SIT313 Project 1 - Memory Game
+# SIT313 Project 1 - Fruit Basket
 
 ## Project description
 
@@ -6,11 +6,13 @@ This project is for SIT313 Mobile Applications. I will be developing an app for 
 
 ## App description
 
-A simple memory game app designed for iOS devices.
+Title: Fruit Basket
+
+A simple memory game app designed for iOS devices that follows a fruity theme.
 
 The player is presented with a grid of hidden tiles. The player touches two of the tiles to reveal the image hidden underneath. If the pair is a match the tiles stay revealed, otherwise they are hidden and the player chooses again. The aim is to reveal all the tiles to win the game.
 
-Each attempt will be timed and a leaderboard will show the fastest times.
+Each attempt will be timed and a high scores table will show the fastest times.
 
 ## iOS capabilities implemented
 
@@ -18,9 +20,11 @@ Each attempt will be timed and a leaderboard will show the fastest times.
 - Navigation controller
 - iOS UI components
 - System Sound
+- Stopwatch
+- Alerts
+- Reading data from a text file
 
 ## iOS capabilities to be implemented
 
-- Saving/loading data
+- Saving data to a text file
 - Table view
-- Timer
