@@ -36,3 +36,5 @@
 /Users/bethany/Projects/FruitBasket/FruitBasket/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-395.nib
 /Users/bethany/Projects/FruitBasket/FruitBasket/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UINavigationController-664.nib
 /Users/bethany/Projects/FruitBasket/FruitBasket/obj/iPhoneSimulator/Debug/optimized/Images/blank.png
+/Users/bethany/Projects/FruitBasket/FruitBasket/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/1002-view-1003.nib
+/Users/bethany/Projects/FruitBasket/FruitBasket/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-1002.nib

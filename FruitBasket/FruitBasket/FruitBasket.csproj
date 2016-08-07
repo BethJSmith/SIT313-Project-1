@@ -150,6 +150,7 @@
     <BundleResource Include="Resources\Sounds\success.mp3" />
     <BundleResource Include="Resources\Data\HowToPlay.txt" />
     <BundleResource Include="Resources\Images\blank.png" />
+    <BundleResource Include="Resources\Data\HighScores.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

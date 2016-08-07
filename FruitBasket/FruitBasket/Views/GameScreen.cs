@@ -1,6 +1,7 @@
 using Foundation;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UIKit;
 using AudioToolbox;
 
@@ -15,7 +16,7 @@ namespace FruitBasket
 		// Move number, whether user selects first tile or secondk
 		int move;
 
-		// First tile picked
+		// First tile pickedd
 		string firstTile;
 		int firstSelection;
 
@@ -23,11 +24,12 @@ namespace FruitBasket
 		NSUrl url;
 		SystemSound sound;
 
+		// Stopwatch used to time playedr
+		Stopwatch stopwatch = new Stopwatch();
 
         public GameScreen (IntPtr handle) : base (handle)
         {
         }
-
 
 		public override void ViewDidLoad()
 		{
@@ -37,7 +39,7 @@ namespace FruitBasket
 			url = NSUrl.FromFilename("Sounds/success.mp3");
 			sound = new SystemSound(url);
 
-			// Set move to first
+			// Set move to firstt
 			move = 1;
 			firstTile = "";
 			firstSelection = -1;
@@ -61,7 +63,10 @@ namespace FruitBasket
 			}
 
 			// Hide all images from player vieww
-			//HideSpaces(); // Comment out for debugging
+			HideSpaces(); // Comment out for debugging
+
+			// Start stopwatchh
+			stopwatch.Start();
 
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
@@ -140,11 +145,36 @@ namespace FruitBasket
 			}
 
 			// Check for winn
-			if (CheckWin())
+			if (move != 0 && CheckWin())
 			{
 				move = 0;
 
-				// Win stuff here....
+				// Stop the stopwatch
+				stopwatch.Stop();
+
+				// https://developer.xamarin.com/recipes/ios/standard_controls/alertcontroller/
+
+				string message = "You completed the game in " + stopwatch.Elapsed.Seconds + "." + stopwatch.Elapsed.Milliseconds + " seconds.";
+				message += "\n\nEnter your name to add it to the high scores table.";
+
+				// Create Alert
+				var getName = UIAlertController.Create("You win!", message, UIAlertControllerStyle.Alert);
+
+				// Add text inputt
+				getName.AddTextField(UITextField => { });
+
+				// Add skip buttonn
+				getName.AddAction(UIAlertAction.Create("Skip", UIAlertActionStyle.Cancel,
+								   alert => EnterName("")));
+
+				// Add continue button
+				getName.AddAction(UIAlertAction.Create("Continue", UIAlertActionStyle.Default, 
+				                   alert => EnterName(getName.TextFields[0].Text)));
+
+				// Present Alert
+				PresentViewController(getName, true, null);
+
+				// Win stuff here...
 			}
 		}
 
@@ -172,5 +202,18 @@ namespace FruitBasket
 			return true;
 		}
 
+		// Name is enteredd
+		public void EnterName(string name)
+		{
+			if (name != "")
+			{
+				// Save name to score table
+			}
+
+			// Show exit buttonn
+			btnContinue.SetTitle("Continue", UIControlState.Normal);
+			btnContinue.Enabled = true;
+
+		}
     }
 }

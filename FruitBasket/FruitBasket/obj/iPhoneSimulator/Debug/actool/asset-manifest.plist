@@ -5,9 +5,7 @@
 	<key>com.apple.actool.compilation-results</key>
 	<dict>
 		<key>output-files</key>
-		<array>
-			<string>/Users/bethany/Projects/FruitBasket/FruitBasket/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
-		</array>
+		<array/>
 	</dict>
 </dict>
 </plist>

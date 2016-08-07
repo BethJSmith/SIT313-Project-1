@@ -64,6 +64,10 @@ namespace FruitBasket
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnContinue { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btnScreen { get; set; }
 
         [Outlet]
@@ -178,6 +182,11 @@ namespace FruitBasket
             if (btn11 != null) {
                 btn11.Dispose ();
                 btn11 = null;
+            }
+
+            if (btnContinue != null) {
+                btnContinue.Dispose ();
+                btnContinue = null;
             }
 
             if (btnScreen != null) {
