@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="664">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="Images/logo.png">
+                                <rect key="frame" x="23.5" y="75" width="328" height="184"/>
+                                <constraints>
+                                    <constraint id="455" firstAttribute="width" secondItem="3" secondAttribute="height" multiplier="41:23"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="4" translatesAutoresizingMaskIntoConstraints="NO" image="Images/fruitbasket.png">
+                                <rect key="frame" x="37.5" y="365.5" width="300" height="203"/>
+                                <constraints>
+                                    <constraint id="454" firstAttribute="width" secondItem="4" secondAttribute="height" multiplier="300:203"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap anywhere to start..." lineBreakMode="tailTruncation" minimumFontSize="10" id="470" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" textAlignment="center">
+                                <rect key="frame" x="247" y="617" width="115" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="473" firstItem="470" firstAttribute="height" constant="50"/>
+                                    <constraint id="474" firstItem="470" firstAttribute="width" constant="115"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="112" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="651" destination="45" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="23" firstItem="3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5/1"/>
+                            <constraint id="24" firstItem="3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="29" firstItem="4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4/1"/>
+                            <constraint id="30" firstItem="4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="170" firstItem="112" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height"/>
+                            <constraint id="171" firstItem="112" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width"/>
+                            <constraint id="176" firstItem="y3c-jy-aDJ" firstAttribute="bottom" secondItem="112" secondAttribute="top" constant="20"/>
+                            <constraint id="177" firstItem="112" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading"/>
+                            <constraint id="196" firstItem="3" firstAttribute="width" secondItem="112" secondAttribute="width" multiplier="0.95" relation="lessThanOrEqual"/>
+                            <constraint id="197" firstItem="4" firstAttribute="width" secondItem="112" secondAttribute="width" multiplier="0.95" relation="lessThanOrEqual"/>
+                            <constraint id="453" firstItem="4" firstAttribute="height" secondItem="112" secondAttribute="height" relation="lessThanOrEqual" multiplier="0.4"/>
+                            <constraint id="457" firstItem="3" firstAttribute="height" secondItem="112" secondAttribute="height" relation="lessThanOrEqual" multiplier="0.5"/>
+                            <constraint id="471" firstItem="470" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top"/>
+                            <constraint id="472" firstItem="112" firstAttribute="trailing" secondItem="470" secondAttribute="trailing" constant="13"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgLogo" destination="3" id="name-outlet-3"/>
+                        <outlet property="imgFruitBasket" destination="4" id="name-outlet-4"/>
+                        <outlet property="btnStart" destination="112" id="name-outlet-112"/>
+                        <outlet property="lblTapToStart" destination="470" id="name-outlet-470"/>
+                    </connections>
+                    <navigationItem title="Title" id="693" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="44">
+            <objects>
+                <viewController id="45" sceneMemberID="viewController" customClass="MenuScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="42"/>
+                        <viewControllerLayoutGuide type="bottom" id="43"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="46">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="440" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="310.5" width="375" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="High Scores">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="458" firstItem="440" firstAttribute="height" constant="46"/>
+                                </constraints>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="461" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="238.5" width="375" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="833" destination="159" kind="push"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="466" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="382.5" width="375" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="How to Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="587" destination="395" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="446" firstItem="440" firstAttribute="width" secondItem="46" secondAttribute="width"/>
+                            <constraint id="447" firstItem="440" firstAttribute="centerY" secondItem="46" secondAttribute="centerY"/>
+                            <constraint id="448" firstItem="440" firstAttribute="centerX" secondItem="46" secondAttribute="centerX"/>
+                            <constraint id="463" firstItem="461" firstAttribute="width" secondItem="46" secondAttribute="width"/>
+                            <constraint id="464" firstItem="440" firstAttribute="top" secondItem="461" secondAttribute="bottom" constant="26"/>
+                            <constraint id="465" firstItem="461" firstAttribute="trailing" secondItem="46" secondAttribute="trailing"/>
+                            <constraint id="467" firstItem="466" firstAttribute="width" secondItem="46" secondAttribute="width"/>
+                            <constraint id="468" firstItem="466" firstAttribute="trailing" secondItem="46" secondAttribute="trailing"/>
+                            <constraint id="469" firstItem="466" firstAttribute="top" secondItem="440" secondAttribute="bottom" constant="26"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnHighScores" destination="440" id="name-outlet-440"/>
+                        <outlet property="btnNewGame" destination="461" id="name-outlet-461"/>
+                        <outlet property="btnHowToPlay" destination="466" id="name-outlet-466"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="-2"/>
+        </scene>
+        <scene sceneID="158">
+            <objects>
+                <viewController id="159" sceneMemberID="viewController" customClass="GameScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="156"/>
+                        <viewControllerLayoutGuide type="bottom" id="157"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="160">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="982" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="989" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="207" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26.5" y="117" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="208" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="117" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="209" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="117" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="227" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="27.5" y="227" width="100" height="101"/>
+                                <constraints/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="232" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="227" width="100" height="100"/>
+                                <constraints>
+                                    <constraint id="798" firstAttribute="width" secondItem="232" secondAttribute="height" multiplier="1:1"/>
+                                    <constraint id="894" firstItem="232" firstAttribute="height" constant="100" priority="500"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="233" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="227" width="100" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="234" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26.5" y="339" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="235" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="339" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="236" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="339" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="237" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26.5" y="451" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="238" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="451" width="101" height="101"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="239" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="451" width="101" height="101"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="903" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="27.5" y="117" width="100" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="966" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="906" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="117" width="101" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="967" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="907" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="117" width="100" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="968" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="908" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="27.5" y="227" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="969" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="909" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="227" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="970" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="910" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="227" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="971" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="911" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="27.5" y="339" width="100" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="972" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="912" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="339" width="101" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="973" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="913" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="339" width="101" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="974" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="914" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="27.5" y="451" width="100" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="975" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="915" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137.5" y="451" width="100" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="976" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="916" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="248.5" y="451" width="100" height="101"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickFruit:" destination="159" id="977" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="795" firstItem="232" firstAttribute="centerX" secondItem="160" secondAttribute="centerX"/>
+                            <constraint id="796" firstItem="160" firstAttribute="centerY" secondItem="232" secondAttribute="centerY" constant="1" multiplier="1.2"/>
+                            <constraint id="799" firstItem="232" firstAttribute="height" secondItem="160" secondAttribute="height" relation="lessThanOrEqual" multiplier="0.18"/>
+                            <constraint id="800" firstItem="232" firstAttribute="width" secondItem="160" secondAttribute="width" relation="lessThanOrEqual" multiplier="0.3"/>
+                            <constraint id="841" firstItem="227" firstAttribute="bottom" secondItem="232" secondAttribute="bottom" constant="1"/>
+                            <constraint id="842" firstItem="227" firstAttribute="top" secondItem="232" secondAttribute="top"/>
+                            <constraint id="843" firstItem="227" firstAttribute="width" secondItem="232" secondAttribute="width"/>
+                            <constraint id="844" firstItem="232" firstAttribute="leading" secondItem="227" secondAttribute="trailing" constant="10"/>
+                            <constraint id="845" firstItem="233" firstAttribute="top" secondItem="232" secondAttribute="top"/>
+                            <constraint id="846" firstItem="233" firstAttribute="bottom" secondItem="232" secondAttribute="bottom" constant="1"/>
+                            <constraint id="848" firstItem="233" firstAttribute="leading" secondItem="232" secondAttribute="trailing" constant="11"/>
+                            <constraint id="851" firstItem="207" firstAttribute="trailing" secondItem="227" secondAttribute="trailing"/>
+                            <constraint id="852" firstItem="227" firstAttribute="leading" secondItem="207" secondAttribute="leading" constant="1"/>
+                            <constraint id="854" firstItem="207" firstAttribute="height" secondItem="227" secondAttribute="height"/>
+                            <constraint id="855" firstItem="227" firstAttribute="top" secondItem="207" secondAttribute="bottom" constant="9"/>
+                            <constraint id="856" firstItem="208" firstAttribute="bottom" secondItem="207" secondAttribute="bottom"/>
+                            <constraint id="857" firstItem="208" firstAttribute="top" secondItem="207" secondAttribute="top"/>
+                            <constraint id="858" firstItem="208" firstAttribute="width" secondItem="207" secondAttribute="width"/>
+                            <constraint id="859" firstItem="208" firstAttribute="leading" secondItem="207" secondAttribute="trailing" constant="10"/>
+                            <constraint id="860" firstItem="209" firstAttribute="trailing" secondItem="233" secondAttribute="trailing" constant="1"/>
+                            <constraint id="861" firstItem="209" firstAttribute="leading" secondItem="233" secondAttribute="leading"/>
+                            <constraint id="862" firstItem="209" firstAttribute="height" secondItem="233" secondAttribute="height"/>
+                            <constraint id="863" firstItem="233" firstAttribute="top" secondItem="209" secondAttribute="bottom" constant="9"/>
+                            <constraint id="864" firstItem="234" firstAttribute="trailing" secondItem="227" secondAttribute="trailing"/>
+                            <constraint id="865" firstItem="227" firstAttribute="leading" secondItem="234" secondAttribute="leading" constant="1"/>
+                            <constraint id="866" firstItem="234" firstAttribute="height" secondItem="227" secondAttribute="height"/>
+                            <constraint id="867" firstItem="234" firstAttribute="top" secondItem="227" secondAttribute="bottom" constant="11"/>
+                            <constraint id="868" firstItem="235" firstAttribute="top" secondItem="234" secondAttribute="top"/>
+                            <constraint id="869" firstItem="235" firstAttribute="bottom" secondItem="234" secondAttribute="bottom"/>
+                            <constraint id="870" firstItem="235" firstAttribute="width" secondItem="234" secondAttribute="width"/>
+                            <constraint id="871" firstItem="235" firstAttribute="leading" secondItem="234" secondAttribute="trailing" constant="10"/>
+                            <constraint id="872" firstItem="236" firstAttribute="leading" secondItem="233" secondAttribute="leading"/>
+                            <constraint id="873" firstItem="236" firstAttribute="trailing" secondItem="233" secondAttribute="trailing" constant="1"/>
+                            <constraint id="874" firstItem="236" firstAttribute="height" secondItem="233" secondAttribute="height"/>
+                            <constraint id="875" firstItem="236" firstAttribute="top" secondItem="233" secondAttribute="bottom" constant="11"/>
+                            <constraint id="876" firstItem="238" firstAttribute="leading" secondItem="235" secondAttribute="leading"/>
+                            <constraint id="877" firstItem="238" firstAttribute="trailing" secondItem="235" secondAttribute="trailing"/>
+                            <constraint id="878" firstItem="238" firstAttribute="height" secondItem="235" secondAttribute="height"/>
+                            <constraint id="879" firstItem="238" firstAttribute="top" secondItem="235" secondAttribute="bottom" constant="11"/>
+                            <constraint id="880" firstItem="237" firstAttribute="leading" secondItem="234" secondAttribute="leading"/>
+                            <constraint id="881" firstItem="237" firstAttribute="trailing" secondItem="234" secondAttribute="trailing"/>
+                            <constraint id="882" firstItem="237" firstAttribute="height" secondItem="234" secondAttribute="height"/>
+                            <constraint id="883" firstItem="237" firstAttribute="top" secondItem="234" secondAttribute="bottom" constant="11"/>
+                            <constraint id="884" firstItem="239" firstAttribute="leading" secondItem="236" secondAttribute="leading"/>
+                            <constraint id="885" firstItem="239" firstAttribute="trailing" secondItem="236" secondAttribute="trailing"/>
+                            <constraint id="886" firstItem="239" firstAttribute="top" secondItem="236" secondAttribute="bottom" constant="11"/>
+                            <constraint id="887" firstItem="239" firstAttribute="height" secondItem="236" secondAttribute="height"/>
+                            <constraint id="890" firstItem="233" firstAttribute="width" secondItem="227" secondAttribute="width"/>
+                            <constraint id="917" firstItem="903" firstAttribute="top" secondItem="207" secondAttribute="top"/>
+                            <constraint id="918" firstItem="903" firstAttribute="leading" secondItem="207" secondAttribute="leading" constant="1"/>
+                            <constraint id="919" firstItem="903" firstAttribute="bottom" secondItem="207" secondAttribute="bottom"/>
+                            <constraint id="920" firstItem="903" firstAttribute="trailing" secondItem="207" secondAttribute="trailing"/>
+                            <constraint id="921" firstItem="906" firstAttribute="top" secondItem="208" secondAttribute="top"/>
+                            <constraint id="922" firstItem="906" firstAttribute="leading" secondItem="208" secondAttribute="leading"/>
+                            <constraint id="923" firstItem="906" firstAttribute="bottom" secondItem="208" secondAttribute="bottom"/>
+                            <constraint id="924" firstItem="906" firstAttribute="trailing" secondItem="208" secondAttribute="trailing"/>
+                            <constraint id="925" firstItem="907" firstAttribute="top" secondItem="209" secondAttribute="top"/>
+                            <constraint id="926" firstItem="907" firstAttribute="leading" secondItem="209" secondAttribute="leading"/>
+                            <constraint id="927" firstItem="907" firstAttribute="bottom" secondItem="209" secondAttribute="bottom"/>
+                            <constraint id="928" firstItem="209" firstAttribute="trailing" secondItem="907" secondAttribute="trailing" constant="1"/>
+                            <constraint id="929" firstItem="908" firstAttribute="top" secondItem="227" secondAttribute="top"/>
+                            <constraint id="930" firstItem="908" firstAttribute="leading" secondItem="227" secondAttribute="leading"/>
+                            <constraint id="931" firstItem="227" firstAttribute="bottom" secondItem="908" secondAttribute="bottom" constant="1"/>
+                            <constraint id="932" firstItem="908" firstAttribute="trailing" secondItem="227" secondAttribute="trailing"/>
+                            <constraint id="933" firstItem="909" firstAttribute="top" secondItem="232" secondAttribute="top"/>
+                            <constraint id="934" firstItem="909" firstAttribute="leading" secondItem="232" secondAttribute="leading"/>
+                            <constraint id="935" firstItem="909" firstAttribute="bottom" secondItem="232" secondAttribute="bottom"/>
+                            <constraint id="936" firstItem="909" firstAttribute="trailing" secondItem="232" secondAttribute="trailing"/>
+                            <constraint id="937" firstItem="910" firstAttribute="top" secondItem="233" secondAttribute="top"/>
+                            <constraint id="938" firstItem="910" firstAttribute="leading" secondItem="233" secondAttribute="leading"/>
+                            <constraint id="939" firstItem="233" firstAttribute="bottom" secondItem="910" secondAttribute="bottom" constant="1"/>
+                            <constraint id="940" firstItem="910" firstAttribute="trailing" secondItem="233" secondAttribute="trailing"/>
+                            <constraint id="941" firstItem="911" firstAttribute="top" secondItem="234" secondAttribute="top"/>
+                            <constraint id="942" firstItem="911" firstAttribute="leading" secondItem="234" secondAttribute="leading" constant="1"/>
+                            <constraint id="943" firstItem="911" firstAttribute="bottom" secondItem="234" secondAttribute="bottom"/>
+                            <constraint id="944" firstItem="911" firstAttribute="trailing" secondItem="234" secondAttribute="trailing"/>
+                            <constraint id="945" firstItem="912" firstAttribute="top" secondItem="235" secondAttribute="top"/>
+                            <constraint id="946" firstItem="912" firstAttribute="leading" secondItem="235" secondAttribute="leading"/>
+                            <constraint id="947" firstItem="912" firstAttribute="bottom" secondItem="235" secondAttribute="bottom"/>
+                            <constraint id="948" firstItem="912" firstAttribute="trailing" secondItem="235" secondAttribute="trailing"/>
+                            <constraint id="949" firstItem="913" firstAttribute="top" secondItem="236" secondAttribute="top"/>
+                            <constraint id="950" firstItem="913" firstAttribute="leading" secondItem="236" secondAttribute="leading"/>
+                            <constraint id="951" firstItem="913" firstAttribute="bottom" secondItem="236" secondAttribute="bottom"/>
+                            <constraint id="952" firstItem="913" firstAttribute="trailing" secondItem="236" secondAttribute="trailing"/>
+                            <constraint id="953" firstItem="914" firstAttribute="top" secondItem="237" secondAttribute="top"/>
+                            <constraint id="954" firstItem="914" firstAttribute="leading" secondItem="237" secondAttribute="leading" constant="1"/>
+                            <constraint id="955" firstItem="914" firstAttribute="bottom" secondItem="237" secondAttribute="bottom"/>
+                            <constraint id="956" firstItem="914" firstAttribute="trailing" secondItem="237" secondAttribute="trailing"/>
+                            <constraint id="957" firstItem="915" firstAttribute="top" secondItem="238" secondAttribute="top"/>
+                            <constraint id="958" firstItem="915" firstAttribute="leading" secondItem="238" secondAttribute="leading"/>
+                            <constraint id="959" firstItem="915" firstAttribute="bottom" secondItem="238" secondAttribute="bottom"/>
+                            <constraint id="960" firstItem="238" firstAttribute="trailing" secondItem="915" secondAttribute="trailing" constant="1"/>
+                            <constraint id="961" firstItem="916" firstAttribute="top" secondItem="239" secondAttribute="top"/>
+                            <constraint id="962" firstItem="916" firstAttribute="leading" secondItem="239" secondAttribute="leading"/>
+                            <constraint id="963" firstItem="916" firstAttribute="bottom" secondItem="239" secondAttribute="bottom"/>
+                            <constraint id="964" firstItem="239" firstAttribute="trailing" secondItem="916" secondAttribute="trailing" constant="1"/>
+                            <constraint id="983" firstItem="982" firstAttribute="height" secondItem="160" secondAttribute="height"/>
+                            <constraint id="984" firstItem="982" firstAttribute="width" secondItem="160" secondAttribute="width"/>
+                            <constraint id="987" firstItem="982" firstAttribute="leading" secondItem="160" secondAttribute="leading"/>
+                            <constraint id="988" firstItem="982" firstAttribute="top" secondItem="160" secondAttribute="top"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="img01" destination="207" id="name-outlet-207"/>
+                        <outlet property="img02" destination="208" id="name-outlet-208"/>
+                        <outlet property="img03" destination="209" id="name-outlet-209"/>
+                        <outlet property="img04" destination="227" id="name-outlet-227"/>
+                        <outlet property="img05" destination="232" id="name-outlet-232"/>
+                        <outlet property="img06" destination="233" id="name-outlet-233"/>
+                        <outlet property="img07" destination="234" id="name-outlet-234"/>
+                        <outlet property="img08" destination="235" id="name-outlet-235"/>
+                        <outlet property="img09" destination="236" id="name-outlet-236"/>
+                        <outlet property="img10" destination="237" id="name-outlet-237"/>
+                        <outlet property="img11" destination="238" id="name-outlet-238"/>
+                        <outlet property="img12" destination="239" id="name-outlet-239"/>
+                        <outlet property="btn00" destination="903" id="name-outlet-903"/>
+                        <outlet property="btn01" destination="906" id="name-outlet-906"/>
+                        <outlet property="btn02" destination="907" id="name-outlet-907"/>
+                        <outlet property="btn03" destination="908" id="name-outlet-908"/>
+                        <outlet property="btn04" destination="909" id="name-outlet-909"/>
+                        <outlet property="btn05" destination="910" id="name-outlet-910"/>
+                        <outlet property="btn06" destination="911" id="name-outlet-911"/>
+                        <outlet property="btn07" destination="912" id="name-outlet-912"/>
+                        <outlet property="btn08" destination="913" id="name-outlet-913"/>
+                        <outlet property="btn09" destination="914" id="name-outlet-914"/>
+                        <outlet property="btn10" destination="915" id="name-outlet-915"/>
+                        <outlet property="btn11" destination="916" id="name-outlet-916"/>
+                        <outlet property="btnScreen" destination="982" id="name-outlet-982"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="161" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440" y="-811"/>
+        </scene>
+        <scene sceneID="337">
+            <objects>
+                <viewController id="338" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="335"/>
+                        <viewControllerLayoutGuide type="bottom" id="336"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="339">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="340" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="-64"/>
+        </scene>
+        <scene sceneID="394">
+            <objects>
+                <viewController id="395" sceneMemberID="viewController" customClass="HowToPlayScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="392"/>
+                        <viewControllerLayoutGuide type="bottom" id="393"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="396">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="How to Play" lineBreakMode="tailTruncation" minimumFontSize="10" id="614" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                                <rect key="frame" x="0.0" y="80" width="375" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="617" firstItem="614" firstAttribute="height" constant="46"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Instructions" lineBreakMode="tailTruncation" minimumFontSize="10" id="705" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="20" textAlignment="center">
+                                <rect key="frame" x="20" y="134" width="335" height="467"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="712" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="609" width="375" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="716" firstItem="712" firstAttribute="height" constant="46"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="746" destination="45" kind="push"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="615" firstItem="614" firstAttribute="top" secondItem="392" secondAttribute="bottom" constant="16"/>
+                            <constraint id="616" firstItem="614" firstAttribute="width" secondItem="396" secondAttribute="width"/>
+                            <constraint id="618" firstItem="614" firstAttribute="centerX" secondItem="396" secondAttribute="centerX"/>
+                            <constraint id="713" firstItem="712" firstAttribute="trailing" secondItem="396" secondAttribute="trailing"/>
+                            <constraint id="714" firstItem="712" firstAttribute="leading" secondItem="396" secondAttribute="leading"/>
+                            <constraint id="715" firstItem="393" firstAttribute="top" secondItem="712" secondAttribute="bottom" constant="12"/>
+                            <constraint id="717" firstItem="712" firstAttribute="centerX" secondItem="396" secondAttribute="centerX"/>
+                            <constraint id="718" firstItem="712" firstAttribute="top" secondItem="705" secondAttribute="bottom" constant="8"/>
+                            <constraint id="720" firstItem="705" firstAttribute="top" secondItem="614" secondAttribute="bottom" constant="8"/>
+                            <constraint id="721" firstItem="705" firstAttribute="leading" secondItem="396" secondAttribute="leading" constant="20"/>
+                            <constraint id="722" firstItem="396" firstAttribute="trailing" secondItem="705" secondAttribute="trailing" constant="20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblHowToPlay" destination="614" id="name-outlet-614"/>
+                        <outlet property="lblInstructions" destination="705" id="name-outlet-705"/>
+                        <outlet property="btnBack" destination="712" id="name-outlet-712"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="397" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="781"/>
+        </scene>
+        <scene sceneID="663">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="664" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="667">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="694" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="668" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/apple.png" width="100" height="100"/>
+        <image name="Images/banana.png" width="100" height="100"/>
+        <image name="Images/cherries.png" width="100" height="100"/>
+        <image name="Images/fruitbasket.png" width="300" height="203"/>
+        <image name="Images/grape.png" width="100" height="100"/>
+        <image name="Images/logo.png" width="328" height="184"/>
+        <image name="Images/orange.png" width="100" height="100"/>
+        <image name="Images/pear.png" width="100" height="100"/>
+        <image name="Images/back.png" width="269" height="75"/>
+        <image name="Images/leaderboard.png" width="503" height="75"/>
+        <image name="Images/newgame.png" width="383" height="75"/>
+        <image name="Images/blank.png" width="100" height="100"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>

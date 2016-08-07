@@ -1,0 +1,5 @@
+Match all the fruit!
+
+Tap a square to reveal the fruit. Tap another to see if it's a match.
+
+Try to match all the fruit as quickly as possible.
