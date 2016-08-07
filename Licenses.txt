@@ -1,2 +1,6 @@
-The sound effect used in this app is licensed under the Creative Commons 0 License, making it available to use for commercial purposes. The sound effect was uploaded to Freesound.org by user Kastenfrosch (2012) and can be found here:
+The sound effect used in this app is licensed under the Creative Commons 0 License,
+making it available to use for commercial purposes. The sound effect was uploaded to
+Freesound.org by user Kastenfrosch (2012) and can be found here:
 https://www.freesound.org/people/Kastenfrosch/sounds/162467/
+
+All visual assets were made by me using Adobe Illustrator.
