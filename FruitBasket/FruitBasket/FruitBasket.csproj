@@ -134,6 +134,8 @@
     <Compile Include="Views\MenuScreen.designer.cs">
       <DependentUpon>MenuScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\HighScore.cs" />
+    <Compile Include="Models\Leaderboard.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Images\apple.png" />

@@ -2,6 +2,7 @@ using Foundation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using UIKit;
 using AudioToolbox;
 
@@ -12,6 +13,9 @@ namespace FruitBasket
 		
 		Game Memory;
 		List<UIImageView> Spaces;
+		Leaderboard Leaderboard;
+
+		private const string SCORES = "Data/HighScores.txt";
 
 		// Move number, whether user selects first tile or secondk
 		int move;
@@ -38,6 +42,9 @@ namespace FruitBasket
 			// Load sound effects
 			url = NSUrl.FromFilename("Sounds/success.mp3");
 			sound = new SystemSound(url);
+
+			// Load leaderboard
+			Leaderboard = new Leaderboard(SCORES);
 
 			// Set move to firstt
 			move = 1;
@@ -151,10 +158,11 @@ namespace FruitBasket
 
 				// Stop the stopwatch
 				stopwatch.Stop();
+				double time = double.Parse(string.Format(stopwatch.Elapsed.Seconds + "." + stopwatch.Elapsed.Milliseconds));
 
 				// https://developer.xamarin.com/recipes/ios/standard_controls/alertcontroller/
 
-				string message = "You completed the game in " + stopwatch.Elapsed.Seconds + "." + stopwatch.Elapsed.Milliseconds + " seconds.";
+				string message = "You completed the game in " + time + " seconds.";
 				message += "\n\nEnter your name to add it to the high scores table.";
 
 				// Create Alert
@@ -165,11 +173,11 @@ namespace FruitBasket
 
 				// Add skip buttonn
 				getName.AddAction(UIAlertAction.Create("Skip", UIAlertActionStyle.Cancel,
-								   alert => EnterName("")));
+								   alert => EnterName("", time)));
 
 				// Add continue button
 				getName.AddAction(UIAlertAction.Create("Continue", UIAlertActionStyle.Default, 
-				                   alert => EnterName(getName.TextFields[0].Text)));
+				                   alert => EnterName(getName.TextFields[0].Text, time)));
 
 				// Present Alert
 				PresentViewController(getName, true, null);
@@ -203,11 +211,12 @@ namespace FruitBasket
 		}
 
 		// Name is enteredd
-		public void EnterName(string name)
+		public void EnterName(string name, double time)
 		{
 			if (name != "")
 			{
 				// Save name to score table
+				Leaderboard.AddScore(name, time);
 			}
 
 			// Show exit buttonn
@@ -215,5 +224,7 @@ namespace FruitBasket
 			btnContinue.Enabled = true;
 
 		}
+
+
     }
 }
