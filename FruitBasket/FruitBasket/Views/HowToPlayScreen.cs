@@ -17,7 +17,7 @@ namespace FruitBasket
 			// Perform any additional setup after loading the view, typically from a nib.
 
 			// Read instructions from file
-			string instructions = File.ReadAllText("Data/HowToPlay.txt");
+			string instructions = File.ReadAllText(Constants.HOW_TO_PLAY_FILE);
 
 			// Show instructions on screen
 			lblInstructions.Text = instructions;

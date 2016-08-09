@@ -140,6 +140,7 @@
     <Compile Include="Views\HighScoresScreen.designer.cs">
       <DependentUpon>HighScoresScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Images\apple.png" />

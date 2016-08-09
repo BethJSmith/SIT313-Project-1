@@ -62,19 +62,17 @@ namespace FruitBasket
 
 		private void WriteFile()
 		{
-			using (StreamWriter sw = new StreamWriter(_Filename))
+			string highscores = "";
+
+			foreach (HighScore score in _Scores)
 			{
-				foreach (HighScore s in _Scores)
-					sw.WriteLine(string.Format("{0},{1}", s.Name, s.Time));
+				highscores += string.Format("{0},{1}\n", score.Name, score.Time);
 			}
 
-			//var sw = new StreamWriter(_Filename, false);
-
-			//sw.WriteLine("Name,Time");
-			//foreach (HighScore s in _Scores)
-			//sw.WriteLine(string.Format("{0},{1}", s.Name, s.Time));
-
-			//sw.Dispose(); string.Format("{0},{1}", s.Name, s.Time)
+			using (StreamWriter sw = new StreamWriter(_Filename, false))
+			{
+				sw.Write(highscores);
+			}
 		}
 	}
 }

@@ -15,8 +15,6 @@ namespace FruitBasket
 		List<UIImageView> Spaces;
 		Leaderboard Leaderboard;
 
-		private const string SCORES = "Data/HighScores.txt";
-
 		// Move number, whether user selects first tile or second
 		int move;
 
@@ -44,7 +42,7 @@ namespace FruitBasket
 			sound = new SystemSound(url);
 
 			// Load leaderboard
-			Leaderboard = new Leaderboard(SCORES);
+			Leaderboard = new Leaderboard(Constants.HIGH_SCORES_FILE);
 
 			// Set move to first
 			move = 1;
