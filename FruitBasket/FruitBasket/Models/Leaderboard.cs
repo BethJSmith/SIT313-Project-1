@@ -32,9 +32,9 @@ namespace FruitBasket
 				string[] values = line.Split(',');
 
 				double x = 0;
-				bool result = double.TryParse(values[1], out x);
+				//bool result = double.TryParse(values[1], out x);
 
-				if (x > 0)
+				if (double.TryParse(values[1], out x) && x > 0)
 					_Scores.Add(new HighScore(values[0], x));
 			}
 			sr.Dispose();
@@ -62,13 +62,19 @@ namespace FruitBasket
 
 		private void WriteFile()
 		{
-			var sw = new StreamWriter(_Filename, false);
+			using (StreamWriter sw = new StreamWriter(_Filename))
+			{
+				foreach (HighScore s in _Scores)
+					sw.WriteLine(string.Format("{0},{1}", s.Name, s.Time));
+			}
 
-			sw.WriteLine("Name,Time");
-			foreach (HighScore s in _Scores)
-				sw.WriteLine(string.Format("{0},{1}", s.Name, s.Time));
+			//var sw = new StreamWriter(_Filename, false);
 
-			sw.Dispose();
+			//sw.WriteLine("Name,Time");
+			//foreach (HighScore s in _Scores)
+			//sw.WriteLine(string.Format("{0},{1}", s.Name, s.Time));
+
+			//sw.Dispose(); string.Format("{0},{1}", s.Name, s.Time)
 		}
 	}
 }

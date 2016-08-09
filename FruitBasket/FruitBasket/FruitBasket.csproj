@@ -136,6 +136,10 @@
     </Compile>
     <Compile Include="Models\HighScore.cs" />
     <Compile Include="Models\Leaderboard.cs" />
+    <Compile Include="Views\HighScoresScreen.cs" />
+    <Compile Include="Views\HighScoresScreen.designer.cs">
+      <DependentUpon>HighScoresScreen.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Images\apple.png" />

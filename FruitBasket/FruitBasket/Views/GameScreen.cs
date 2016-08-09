@@ -17,18 +17,18 @@ namespace FruitBasket
 
 		private const string SCORES = "Data/HighScores.txt";
 
-		// Move number, whether user selects first tile or secondk
+		// Move number, whether user selects first tile or second
 		int move;
 
 		// First tile pickedd
 		string firstTile;
 		int firstSelection;
 
-		// Sound effectss
+		// Sound effects
 		NSUrl url;
 		SystemSound sound;
 
-		// Stopwatch used to time playedr
+		// Stopwatch used to time player
 		Stopwatch stopwatch = new Stopwatch();
 
         public GameScreen (IntPtr handle) : base (handle)
@@ -46,7 +46,7 @@ namespace FruitBasket
 			// Load leaderboard
 			Leaderboard = new Leaderboard(SCORES);
 
-			// Set move to firstt
+			// Set move to first
 			move = 1;
 			firstTile = "";
 			firstSelection = -1;
@@ -69,10 +69,10 @@ namespace FruitBasket
 				Spaces[x].Image = new UIImage(Memory.Grid[x].Icon);
 			}
 
-			// Hide all images from player vieww
+			// Hide all images from player view
 			HideSpaces(); // Comment out for debugging
 
-			// Start stopwatchh
+			// Start stopwatch
 			stopwatch.Start();
 
 			// Perform any additional setup after loading the view, typically from a nib.
@@ -186,14 +186,14 @@ namespace FruitBasket
 			}
 		}
 
-		// Shows the image of a given tilee
+		// Shows the image of a given tile
 		public void ShowImage(int number)
 		{
 			if (number >= 0)
 				Spaces[number].Image = new UIImage(Memory.Grid[number].Icon);
 		}
 
-		// Hides all spaces that haven't been revealedd
+		// Hides all spaces that haven't been revealed
 		public void HideSpaces()
 		{
 			for (int x = 0; x < Spaces.Count; x++)
@@ -201,7 +201,7 @@ namespace FruitBasket
 					Spaces[x].Image = new UIImage(Memory.Grid[x].Blank);
 		}
 
-		// Checks if win conditions are mett
+		// Checks if win conditions are met
 		public bool CheckWin()
 		{
 			for (int x = 0; x < Spaces.Count; x++)
@@ -210,16 +210,17 @@ namespace FruitBasket
 			return true;
 		}
 
-		// Name is enteredd
+		// Name is entered
 		public void EnterName(string name, double time)
 		{
 			if (name != "")
 			{
 				// Save name to score table
 				Leaderboard.AddScore(name, time);
+
 			}
 
-			// Show exit buttonn
+			// Show exit button
 			btnContinue.SetTitle("Continue", UIControlState.Normal);
 			btnContinue.Enabled = true;
 

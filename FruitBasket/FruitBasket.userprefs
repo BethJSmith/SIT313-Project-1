@@ -1,1 +1,15 @@
-﻿<Properties StartupItem="FruitBasket/FruitBasket.csproj" />
+﻿<Properties StartupItem="FruitBasket/FruitBasket.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FruitBasket/Models/Leaderboard.cs">
+    <Files>
+      <File FileName="FruitBasket/Views/GameScreen.cs" Line="160" Column="22" />
+      <File FileName="FruitBasket/Models/HighScore.cs" Line="13" Column="4" />
+      <File FileName="FruitBasket/Models/Leaderboard.cs" Line="40" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FruitBasket PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.773D4A58-FF76-4EF3-92EE-DB6976FE85CF" />
+</Properties>

@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-37" y="-197"/>
         </scene>
         <scene sceneID="44">
             <objects>
@@ -100,7 +100,9 @@
                                 <constraints>
                                     <constraint id="458" firstItem="440" firstAttribute="height" constant="46"/>
                                 </constraints>
-                                <connections/>
+                                <connections>
+                                    <segue id="1209" destination="338" kind="push"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="461" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="0.0" y="238.5" width="375" height="46"/>
@@ -469,7 +471,7 @@
         </scene>
         <scene sceneID="337">
             <objects>
-                <viewController id="338" sceneMemberID="viewController">
+                <viewController id="338" sceneMemberID="viewController" customClass="HighScoresScreen">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="335"/>
                         <viewControllerLayoutGuide type="bottom" id="336"/>
@@ -478,11 +480,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="High Scores" lineBreakMode="tailTruncation" minimumFontSize="10" id="1123" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" misplaced="YES">
+                                <rect key="frame" x="0.0" y="36" width="375" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1124" firstItem="1123" firstAttribute="height" constant="46"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1136" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="609" width="375" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="1139" firstItem="1136" firstAttribute="height" constant="46"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="1266" destination="45" kind="push"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scores" lineBreakMode="tailTruncation" minimumFontSize="10" id="1143" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="20" textAlignment="center" misplaced="YES">
+                                <rect key="frame" x="20" y="90" width="335" height="511"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1125" firstItem="1123" firstAttribute="leading" secondItem="339" secondAttribute="leading"/>
+                            <constraint id="1126" firstItem="1123" firstAttribute="trailing" secondItem="339" secondAttribute="trailing"/>
+                            <constraint id="1127" firstItem="1123" firstAttribute="top" secondItem="335" secondAttribute="bottom" constant="16"/>
+                            <constraint id="1140" firstItem="1136" firstAttribute="leading" secondItem="339" secondAttribute="leading"/>
+                            <constraint id="1141" firstItem="1136" firstAttribute="trailing" secondItem="339" secondAttribute="trailing"/>
+                            <constraint id="1142" firstItem="336" firstAttribute="top" secondItem="1136" secondAttribute="bottom" constant="12"/>
+                            <constraint id="1144" firstItem="1143" firstAttribute="leading" secondItem="339" secondAttribute="leading" constant="20"/>
+                            <constraint id="1145" firstItem="339" firstAttribute="trailing" secondItem="1143" secondAttribute="trailing" constant="20"/>
+                            <constraint id="1146" firstItem="1143" firstAttribute="top" secondItem="1123" secondAttribute="bottom" constant="8"/>
+                            <constraint id="1147" firstItem="1136" firstAttribute="top" secondItem="1143" secondAttribute="bottom" constant="8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblHighScores" destination="1123" id="name-outlet-1123"/>
+                        <outlet property="lblScores" destination="1143" id="name-outlet-1143"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="340" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623" y="-64"/>
+            <point key="canvasLocation" x="1411" y="779"/>
         </scene>
         <scene sceneID="394">
             <objects>
@@ -549,7 +599,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="397" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="781"/>
+            <point key="canvasLocation" x="116" y="921"/>
         </scene>
         <scene sceneID="663">
             <objects>
@@ -564,7 +614,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="668" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-570" y="0.0"/>
+            <point key="canvasLocation" x="-679" y="-369"/>
         </scene>
     </scenes>
     <resources>
