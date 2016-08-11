@@ -2,10 +2,8 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="FruitBasket/Views/GameScreen.cs" Line="39" Column="4" />
-      <File FileName="FruitBasket/Models/Leaderboard.cs" Line="75" Column="5" />
-      <File FileName="FruitBasket/Constants.cs" Line="7" Column="71" />
+      <File FileName="FruitBasket/Models/Leaderboard.cs" Line="68" Column="5" />
       <File FileName="FruitBasket/Views/HowToPlayScreen.cs" Line="15" Column="4" />
-      <File FileName="FruitBasket/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

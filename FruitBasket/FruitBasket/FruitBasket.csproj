@@ -152,11 +152,11 @@
     </Compile>
     <Compile Include="Models\HighScore.cs" />
     <Compile Include="Models\Leaderboard.cs" />
-    <Compile Include="Views\HighScoresScreen.cs" />
-    <Compile Include="Views\HighScoresScreen.designer.cs">
-      <DependentUpon>HighScoresScreen.cs</DependentUpon>
+    <Compile Include="Views\HighScores.cs" />
+    <Compile Include="Views\HighScores.designer.cs">
+      <DependentUpon>HighScores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Constants.cs" />
+    <Compile Include="Models\TableSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Images\apple.png" />

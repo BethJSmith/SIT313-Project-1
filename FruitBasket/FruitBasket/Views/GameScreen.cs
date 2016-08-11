@@ -42,7 +42,7 @@ namespace FruitBasket
 			sound = new SystemSound(url);
 
 			// Load leaderboard
-			Leaderboard = new Leaderboard(Constants.HIGH_SCORES_FILE);
+			Leaderboard = new Leaderboard("Data/HighScores.txt");
 
 			// Set move to first
 			move = 1;
