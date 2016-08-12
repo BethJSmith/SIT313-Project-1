@@ -4,11 +4,13 @@
 
 This project is for SIT313 Mobile Applications. I will be developing an app for a mobile system. The system I have chosen to develop for will be iOS.
 
-## App description - Fruit Basket
+---
 
 ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/logo.png)
 
 A simple memory game app designed for iOS devices that follows a fruity theme.
+
+## Features
 
 ### New game
 
@@ -23,6 +25,8 @@ Clicking high scores on the home screen will take you to the high scores table. 
 ### How to play
 
 The option from the home screen is how to play. This explains to the user how to play the game and the description is populated from a text file so it can be changed easily if needed.
+
+![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/apple.png)  ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/pear.png) ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/banana.png)  ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/grape.png) ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/orange.png)  ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/cherries.png)
 
 ## Capabilities implemented
 
@@ -41,4 +45,6 @@ The option from the home screen is how to play. This explains to the user how to
 - Reading data from text file
 - App icons
 
-![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/apple.png)  ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/pear.png) ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/banana.png)  ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/grape.png) ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/orange.png)  ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/cherries.png)
+## How to run
+
+To run the following app you must have Xamarin.iOS installed on your machine. Download the folder named 'FruitBasket' to a local location. Load the FruitBasket.sln file in Xamarin to view the solution. Click debug to run the app in the iPhone simulator. This app is compatible with iPhone 4S through iPhone 6S Plus as well as iPad.
