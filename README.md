@@ -4,8 +4,6 @@
 
 This project is for SIT313 Mobile Applications. I will be developing an app for a mobile system. The system I have chosen to develop for will be iOS.
 
----
-
 ![alt tag](https://github.com/BethJSmith/SIT313-Project-1/blob/master/FruitBasket/FruitBasket/Resources/Images/logo.png)
 
 A simple memory game app designed for iOS devices that follows a fruity theme.
