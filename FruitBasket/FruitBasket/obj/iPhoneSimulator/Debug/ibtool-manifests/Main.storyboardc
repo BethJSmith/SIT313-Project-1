@@ -8,12 +8,12 @@
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
 	<dict>
-		<key>1123</key>
+		<key>1394</key>
 		<array>
 			<dict>
 				<key>affected-objects</key>
 				<array>
-					<string>1123</string>
+					<string>1394</string>
 				</array>
 				<key>message</key>
 				<string>Minimum Font Size greater than current font size</string>
